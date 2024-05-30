@@ -1,0 +1,10 @@
+# Основной цикл игры
+while True:
+    # Получаем направление движения
+    direction = input("Куда пойти? ")
+    # Пытаемся переместить игрока
+    moved, position = game.move(direction)
+    if not moved:
+        print("Вы не можете туда пойти.")
+    else:
+        print(f"Вы переместились в позицию {position}.")
